@@ -1,0 +1,52 @@
+.section-work-item{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "jobTitle    startEnd"
+                        "employer   .";
+}
+.work-item-title{
+  grid-area: jobTitle;
+  padding: 0;
+  margin: 0;
+}
+
+.work-item-start-end{
+  grid-area: startEnd;
+  display: flex;
+  
+  justify-content: right;
+  padding: 0;
+  margin: 0;
+}
+
+.work-item-employer{
+  grid-area: employer;
+  padding: 0;
+  margin: 0;
+}
+
+.subsection{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.subsection-title{
+  width: 100%;
+}
+
+.subsection-list-special{
+  width: 30%;
+  list-style: none;
+}
+
+img{
+  width: 25px;
+  height: 25px;
+  padding-right: 10px;
+}
+
