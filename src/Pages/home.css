@@ -1,5 +1,39 @@
-.section-work-item{
+.page-parent-div{
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.resume-section{
+  padding-bottom: 10px;
+  border-bottom: solid 2px;
+}
+
+.resume-section > div{
+  padding-bottom: 15px;
+}
+
+.resume-section > h2 {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+.subsection{
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+p{
+  font-size: 18px;;
+}
+li{
+  font-size: 18px;;
+}
+
+.work-start-end{
   display: grid;
+  padding-left: 25px;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "jobTitle    startEnd"
                         "employer   .";
@@ -13,10 +47,23 @@
 .work-item-start-end{
   grid-area: startEnd;
   display: flex;
-  
   justify-content: right;
   padding: 0;
   margin: 0;
+}
+
+.special-subsection{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.special-subsection > h3 {
+  width:100%
+}
+.special-subsection > ul{
+  list-style: none;
+  
 }
 
 .work-item-employer{
@@ -25,7 +72,7 @@
   margin: 0;
 }
 
-.subsection{
+/*.subsection{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -33,16 +80,13 @@
   padding: 0;
   justify-content: center;
   align-items: center;
-}
+}*/
 
 .subsection-title{
   width: 100%;
 }
 
-.subsection-list-special{
-  width: 30%;
-  list-style: none;
-}
+
 
 img{
   width: 25px;
